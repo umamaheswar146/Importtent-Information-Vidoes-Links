@@ -1,0 +1,58 @@
+                                  REDUX-SAGA
+                                  ==========
+
+Stpes:
+----------------
+1.npm install redux,react-redux,redux-saga (in command prompt)
+2.index.js(Project)
+i.import createSagaMiddleware from 'redux-saga'
+ii.const sagaMiddleware = createSagaMiddleware()
+iii.import {createStore,applyMiddleware} from 'redux'
+iv.const store = createStore(reducer,applyMiddleware(sagaMiddleware))
+v.sagamiddleware.run(NmmeOfFunction);
+vi.Create a separate Folder in src(genartor Function)
+vii.import {takeEvery,put}from 'redux-saga/effects'
+function* anothyerFunction(){
+ yield put({type:'AGE_UP_ASYNC',value:123});
+}
+export function* NmmeOfFunction(){
+ yield takeEvery('AGE_UP',anothyerFunction);
+}
+ State:
+============
+State is Immutable we cant not modify the state,if u done any changes a new state is created.
+ 
+connect Method In React:
+========================
+ import {connect} from "react";
+mapStateToprops =(state)=>{
+return{
+data:post.id
+}
+
+}
+mapDispatchToprops=(dispatch)=>{
+return{
+OnAgeUp:()=>dispatch({type:'',payload:''})
+}
+}
+=========================================================================================
+REDUX SAGA VIDEO
+1.https://youtu.be/Bq_Hkj-G-4c
+2.https://youtu.be/jQ4YD7Ip6T4
+=========================================================================================
+REACT JS TESTING
+1.https://youtu.be/REfRxzmWDLs
+=========================================================================================
+Push The Code To Git HUb From Vissual studio
+https://youtu.be/NTY5VELbCWI
+=========================================================================================
+Java Script Methods
+https://www.w3schools.com/jsref/jsref_unshift.asp
+==========================================================================================
+Udemy Link
+https://cognizant.udemy.com
+==========================================================================================
+BootStrape NavBar Link
+https://m.pardel.net/react-and-bootstrap-4-part-1-setup-navigation-d4767e2ed9f0
+==========================================================================================
